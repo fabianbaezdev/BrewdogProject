@@ -31,3 +31,8 @@ I recommend making the following changes:
 * Introduce the Action concept to allow different Intents to converge into a single Action.
 * Separate the ViewModel and create Processor and Reducer classes.
 * Incorporate Models into the UI Layer.
+
+### **TODO**
+
+* Beer Detail Screen
+* Tests

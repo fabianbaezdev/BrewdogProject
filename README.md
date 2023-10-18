@@ -34,5 +34,5 @@ I recommend making the following changes:
 
 ### **TODO**
 
-* Beer Detail Screen
+* Improve Beer Detail Screen
 * Tests

@@ -4,6 +4,7 @@ import cl.neoxcore.brewdogproject.domain.Repository
 import cl.neoxcore.brewdogproject.domain.model.Beer
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.single
 import javax.inject.Inject
 
 class RepositoryImpl @Inject constructor(
@@ -21,5 +22,10 @@ class RepositoryImpl @Inject constructor(
                 emit(with(beerMapper) { remoteBeers.remoteToDomain() })
             }
         }
+    }
+
+    override fun getBeer(id: String): Flow<Beer> = flow {
+        val beer = local.getBeer(id).single()
+        emit(with(beerMapper) { beer.localToDomain() })
     }
 }

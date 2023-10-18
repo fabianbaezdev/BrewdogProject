@@ -18,4 +18,9 @@ class LocalImpl @Inject constructor(
         val beers = databaseBuilder.beerDao().getAll()
         emit(beers)
     }
+
+    override suspend fun getBeer(id: String): Flow<LocalBeer> = flow {
+        val beer = databaseBuilder.beerDao().getById(id)
+        emit(beer)
+    }
 }

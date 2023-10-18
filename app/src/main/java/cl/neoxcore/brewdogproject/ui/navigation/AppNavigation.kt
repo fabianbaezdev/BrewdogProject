@@ -25,7 +25,7 @@ fun AppNavigation() {
         composable(
             route = Navigation.Routes.BEER
         ) {
-            BeerScreenDestination(navController)
+            DetailScreenDestination(navController)
         }
     }
 }

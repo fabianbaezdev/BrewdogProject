@@ -6,5 +6,5 @@ import kotlinx.coroutines.flow.Flow
 interface Local {
     suspend fun storeBeers(values: List<LocalBeer>)
     suspend fun getBeers(): Flow<List<LocalBeer>>
-
+    suspend fun getBeer(id:String): Flow<LocalBeer>
 }

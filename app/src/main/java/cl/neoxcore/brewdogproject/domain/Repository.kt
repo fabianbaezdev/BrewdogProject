@@ -5,4 +5,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface Repository {
     fun getBeers(): Flow<List<Beer>>
+    fun getBeer(id: String): Flow<Beer>
 }

@@ -22,6 +22,7 @@ it exists.
 * Room - for local database
 * Coil - for image loading
 * Navigation Compose - for navigation between screens
+* Unit Testing - for data and domain layers
 
 ### **Recommendations for bigger projects** 
 
@@ -35,4 +36,4 @@ I recommend making the following changes:
 ### **TODO**
 
 * Improve Beer Detail Screen
-* Tests
+* Instrumental Tests

@@ -25,6 +25,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -42,32 +43,25 @@ import coil.compose.AsyncImage
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ListScreen(
-    viewModel: ListViewModel,
-    onNavigationRequested: (navigationEffect: Navigation) -> Unit
+    viewModel: ListViewModel, onNavigationRequested: (navigationEffect: Navigation) -> Unit
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
 
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    titleContentColor = MaterialTheme.colorScheme.primary,
-                ),
-                title = {
-                    Text("Brewdog Beers")
-                }
-            )
-        }
-    ) { innerPadding ->
+    Scaffold(topBar = {
+        TopAppBar(colors = TopAppBarDefaults.mediumTopAppBarColors(
+            containerColor = MaterialTheme.colorScheme.primaryContainer,
+            titleContentColor = MaterialTheme.colorScheme.primary,
+        ), title = {
+            Text("Brewdog Beers")
+        })
+    }) { innerPadding ->
         Column(
-            modifier = Modifier
-                .padding(innerPadding),
+            modifier = Modifier.padding(innerPadding),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             when (state) {
                 is DisplayListUiState -> {
-                    LazyColumn {
+                    LazyColumn(modifier = Modifier.testTag("BeersList")) {
                         items((state as DisplayListUiState).beers) { beer ->
                             CardBeer(beer, onNavigationRequested)
                         }
@@ -76,15 +70,18 @@ fun ListScreen(
 
                 is ErrorUiState -> {
                     Text(
-                        modifier = Modifier.padding(8.dp),
-                        text = "Error"
+                        modifier = Modifier
+                            .padding(8.dp)
+                            .testTag("ErrorText"), text = "Error"
                     )
                 }
 
                 LoadingUiState -> {
                     Box(
                         contentAlignment = Alignment.Center,
-                        modifier = Modifier.fillMaxSize()
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .testTag("LoadingBox")
                     ) {
                         CircularProgressIndicator()
                     }
@@ -93,7 +90,9 @@ fun ListScreen(
                 DefaultUiState -> {
                     Box(
                         contentAlignment = Alignment.Center,
-                        modifier = Modifier.fillMaxSize()
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .testTag("DefaultBox")
                     ) {
                         CircularProgressIndicator()
                     }
@@ -103,22 +102,17 @@ fun ListScreen(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CardBeer(
-    beer: Beer,
-    onNavigationRequested: (navigationEffect: Navigation) -> Unit
+    beer: Beer, onNavigationRequested: (navigationEffect: Navigation) -> Unit
 ) {
-    ElevatedCard(
-        elevation = CardDefaults.cardElevation(
-            defaultElevation = 6.dp
-        ),
-        modifier = Modifier
-            .padding(6.dp)
-            .fillMaxWidth(),
-        onClick = {
-            onNavigationRequested(Navigation.BeerDetail(id = beer.id.toString()))
-        }
+    ElevatedCard(elevation = CardDefaults.cardElevation(
+        defaultElevation = 6.dp
+    ), modifier = Modifier
+        .padding(6.dp)
+        .fillMaxWidth(), onClick = {
+        onNavigationRequested(Navigation.BeerDetail(id = beer.id.toString()))
+    }
 
     ) {
         Row(modifier = Modifier.fillMaxWidth()) {
@@ -134,29 +128,35 @@ fun CardBeer(
                 Text(
                     text = beer.name,
                     modifier = Modifier
-                        .padding(6.dp),
+                        .padding(6.dp)
+                        .testTag("BeerNameText"),
                     textAlign = TextAlign.Left,
                     fontWeight = FontWeight.Bold,
                     maxLines = 1
                 )
-                Text(
-                    text = "ABV: ${beer.abv}",
-                    modifier = Modifier
-                        .padding(6.dp, 0.dp),
-                    textAlign = TextAlign.Left,
-                    fontSize = 12.sp
-                )
-                Text(
-                    text = "IBU: ${beer.ibu}",
-                    modifier = Modifier
-                        .padding(6.dp, 0.dp),
-                    textAlign = TextAlign.Left,
-                    fontSize = 12.sp
-                )
+                Row {
+                    Text(
+                        text = "ABV: ${beer.abv}",
+                        modifier = Modifier
+                            .padding(6.dp, 0.dp)
+                            .testTag("ABVText"),
+                        textAlign = TextAlign.Left,
+                        fontSize = 12.sp
+                    )
+                    Text(
+                        text = "IBU: ${beer.ibu}",
+                        modifier = Modifier
+                            .padding(6.dp, 0.dp)
+                            .testTag("IBUText"),
+                        textAlign = TextAlign.Left,
+                        fontSize = 12.sp
+                    )
+                }
                 Text(
                     text = beer.tagLine,
                     modifier = Modifier
-                        .padding(6.dp, 2.dp),
+                        .padding(6.dp, 2.dp)
+                        .testTag("tagLineText"),
                     textAlign = TextAlign.Left,
                     fontSize = 12.sp
                 )

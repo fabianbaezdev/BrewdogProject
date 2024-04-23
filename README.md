@@ -23,6 +23,7 @@ it exists.
 * Coil - for image loading
 * Navigation Compose - for navigation between screens
 * Unit Testing - for data and domain layers
+* Instrumental Testing - For ui layer with Jetpack Compose
 
 ### **Recommendations for bigger projects** 
 
@@ -36,4 +37,4 @@ I recommend making the following changes:
 ### **TODO**
 
 * Improve Beer Detail Screen
-* Instrumental Tests
+* Improve Server Error handling to use local data

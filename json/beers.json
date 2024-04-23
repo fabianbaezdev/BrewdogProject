@@ -1,0 +1,104 @@
+[
+  {
+    "abv": 5.2,
+    "brewers_tips": "Ferment at a cool temperature to enhance the hoppy aroma.",
+    "description": "A light and refreshing pale ale with a citrusy hop character.",
+    "first_brewed": "2023",
+    "food_pairing": [
+      "Spicy food",
+      "Seafood",
+      "Salads"
+    ],
+    "ibu": 45,
+    "id": 1,
+    "image_url": "",
+    "name": "Cascade Citrus",
+    "ph": 5.2,
+    "tagline": "A hoppy burst of sunshine"
+  },
+  {
+    "abv": 8.5,
+    "brewers_tips": "Use a strong yeast strain to ensure complete fermentation of the high gravity wort.",
+    "description": "A rich and complex imperial stout with notes of chocolate, coffee, and roasted barley.",
+    "first_brewed": "2022",
+    "food_pairing": [
+      "Chocolate desserts",
+      "Aged cheeses",
+      "Steaks"
+    ],
+    "ibu": 70,
+    "id": 2,
+    "image_url": "",
+    "name": "Nightfall Imperial Stout",
+    "ph": 5.0,
+    "tagline": "Darkness in a glass"
+  },
+  {
+    "abv": 4.8,
+    "brewers_tips": "Experiment with different fruits for a unique flavor profile.",
+    "description": "A tart and refreshing wheat beer infused with real strawberries.",
+    "first_brewed": "2021",
+    "food_pairing": [
+      "Desserts",
+      "Salads",
+      "Soft cheeses"
+    ],
+    "ibu": 12,
+    "id": 3,
+    "image_url": "",
+    "name": "Summer Strawberry Wheat",
+    "ph": 3.8,
+    "tagline": "A taste of summer sunshine"
+  },
+  {
+    "abv": 7.2,
+    "brewers_tips": "Dry hop generously for maximum aroma and flavor.",
+    "description": "A juicy and flavorful New England IPA with notes of citrus, mango, and pine.",
+    "first_brewed": "2024",
+    "food_pairing": [
+      "Spicy food",
+      "Grilled meats",
+      "Strong cheeses"
+    ],
+    "ibu": 55,
+    "id": 4,
+    "image_url": "",
+    "name": "Tropical Haze IPA",
+    "ph": 6.2,
+    "tagline": "A burst of tropical paradise"
+  },
+  {
+    "abv": 5.5,
+    "brewers_tips": "Use a traditional German lager yeast for an authentic flavor profile.",
+    "description": "A crisp and clean pilsner with a malty backbone and a hint of hops.",
+    "first_brewed": "2020",
+    "food_pairing": [
+      "Seafood",
+      "Salads",
+      "Light appetizers"
+    ],
+    "ibu": 25,
+    "id": 5,
+    "image_url": "",
+    "name": "Golden Lager",
+    "ph": 5.2,
+    "tagline": "The perfect refreshment"
+  },
+  {
+    "abv": 9.0,
+    "brewers_tips": "Age for several months to allow the flavors to mellow and develop.",
+    "description": "A strong and complex Belgian quadrupel with notes of dark fruit, caramel, and spice.",
+    "first_brewed": "2019",
+    "food_pairing": [
+      "Chocolate desserts",
+      "Aged cheeses",
+      "Strong stews"
+    ],
+    "ibu": 30,
+    "id": 6,
+    "image_url": "",
+    "name": "Abbey's Blessing",
+    "ph": 4.8,
+    "tagline": "A taste of Belgian tradition"
+  }
+  ]

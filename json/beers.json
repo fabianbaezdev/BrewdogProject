@@ -11,7 +11,7 @@
     ],
     "ibu": 45,
     "id": 1,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a01.jpg",
     "name": "Cascade Citrus",
     "ph": 5.2,
     "tagline": "A hoppy burst of sunshine"
@@ -28,7 +28,7 @@
     ],
     "ibu": 70,
     "id": 2,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a02.jpg",
     "name": "Nightfall Imperial Stout",
     "ph": 5.0,
     "tagline": "Darkness in a glass"
@@ -45,7 +45,7 @@
     ],
     "ibu": 12,
     "id": 3,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a03.jpg",
     "name": "Summer Strawberry Wheat",
     "ph": 3.8,
     "tagline": "A taste of summer sunshine"
@@ -62,7 +62,7 @@
     ],
     "ibu": 55,
     "id": 4,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a04.jpg",
     "name": "Tropical Haze IPA",
     "ph": 6.2,
     "tagline": "A burst of tropical paradise"
@@ -79,7 +79,7 @@
     ],
     "ibu": 25,
     "id": 5,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a05.jpg",
     "name": "Golden Lager",
     "ph": 5.2,
     "tagline": "The perfect refreshment"
@@ -96,9 +96,213 @@
     ],
     "ibu": 30,
     "id": 6,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a06.jpg",
     "name": "Abbey's Blessing",
     "ph": 4.8,
     "tagline": "A taste of Belgian tradition"
+  },
+  {
+    "abv": 6.2,
+    "brewers_tips": "Maintain a cool fermentation temperature to preserve the delicate hop character.",
+    "description": "A light and sessionable American pale ale with a pronounced citrusy aroma.",
+    "first_brewed": "2023",
+    "food_pairing": [
+      "Spicy food",
+      "Seafood",
+      "Salads"
+    ],
+    "ibu": 30,
+    "id": 7,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a07.jpg",
+    "name": "West Coast Pale Ale",
+    "ph": 5.4,
+    "tagline": "A classic for a reason"
+  },
+  {
+    "abv": 11.5,
+    "brewers_tips": "Be sure to use a strong enough yeast strain to ferment the high alcohol content.",
+    "description": "A warming and boozy barleywine with notes of toffee, caramel, and dried fruit.",
+    "first_brewed": "2022",
+    "food_pairing": [
+      "Chocolate desserts",
+      "Aged cheeses",
+      "Strong stews"
+    ],
+    "ibu": 60,
+    "id": 8,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a08.jpg",
+    "name": "Winter warmer Barleywine",
+    "ph": 4.8,
+    "tagline": "A beer to chase away the cold"
+  },
+  {
+    "abv": 5.0,
+    "brewers_tips": "Add a generous amount of flaked oats for a smooth and creamy mouthfeel.",
+    "description": "A hazy and refreshing milk stout with notes of chocolate, coffee, and lactose sugar.",
+    "first_brewed": "2024",
+    "food_pairing": [
+      "Chocolate desserts",
+      "Strong cheeses",
+      "Burgers"
+    ],
+    "ibu": 35,
+    "id": 9,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a09.jpg",
+    "name": "Midnight Moo Milk Stout",
+    "ph": 4.5,
+    "tagline": "A decadent treat"
+  },
+  {
+    "abv": 4.2,
+    "brewers_tips": "Use a blend of German and Czech pilsner malts for an authentic flavor profile.",
+    "description": "A light and crisp Kölsch-style ale with a hint of sweetness and a subtle hoppy bitterness.",
+    "first_brewed": "2020",
+    "food_pairing": [
+      "Seafood",
+      "Salads",
+      "Sandwiches"
+    ],
+    "ibu": 18,
+    "id": 10,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a10.jpg",
+    "name": "Cologne Calling Kölsch",
+    "ph": 5.2,
+    "tagline": "A taste of Cologne in every sip"
+  },
+  {
+    "abv": 8.0,
+    "brewers_tips": "Sour mash the wort to create a tart and acidic flavor profile.",
+    "description": "A tart and refreshing Berliner Weisse with a hint of fruit flavor.",
+    "first_brewed": "2021",
+    "food_pairing": [
+      "Spicy food",
+      "Seafood",
+      "Salads"
+    ],
+    "ibu": 8,
+    "id": 11,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a11.jpg",
+    "name": "Berlin's Bite Berliner Weisse",
+    "ph": 3.2,
+    "tagline": "A pucker-inducing delight"
+  },
+  {
+    "abv": 5.8,
+    "brewers_tips": "Experiment with different wood chips to achieve the desired smoke character.",
+    "description": "A smoky and malty rauchbier with a hint of chocolate and caramel.",
+    "first_brewed": "2023",
+    "food_pairing": [
+      "Grilled meats",
+      "Strong cheeses",
+      "Beans"
+    ],
+    "ibu": 22,
+    "id": 12,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a12.jpg",
+    "name": "Smoky Mountain Rauchbier",
+    "ph": 5.0,
+    "tagline": "A taste of the campfire"
+  },
+  {
+    "abv": 7.0,
+    "brewers_tips": "Dry hop with citrusy hops for a bright and refreshing aroma.",
+    "description": "A sessionable and citrusy American IPA with a moderate bitterness.",
+    "first_brewed": "2024",
+    "food_pairing": [
+      "Spicy food",
+      "Grilled chicken",
+      "Tacos"
+    ],
+    "ibu": 65,
+    "id": 13,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a13.jpg",
+    "name": "West Coast Crush IPA",
+    "ph": 6.0,
+    "tagline": "An IPA for every occasion"
+  },
+  {
+    "abv": 10.0,
+    "brewers_tips": "Use a blend of Belgian yeasts for a complex flavor profile.",
+    "description": "A strong and spicy Belgian tripel with notes of pear, banana, and pepper.",
+    "first_brewed": 2022,
+    "food_pairing": [
+      "Spicy food",
+      "Aged cheeses",
+      "Shellfish"
+    ],
+    "ibu": 32,
+    "id": 14,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a14.jpg",
+    "name": "Abbey's Fury Tripel",
+    "ph": 4.8,
+    "tagline": "A taste of Belgian strength"
+  },
+  {
+    "abv": 4.5,
+    "brewers_tips": "Control fermentation temperature carefully to maintain a clean and crisp flavor.",
+    "description": "A light and refreshing German-style pilsner with a pronounced bitterness.",
+    "first_brewed": 2021,
+    "food_pairing": [
+      "Seafood",
+      "Salads",
+      "Light appetizers"
+    ],
+    "ibu": 40,
+    "id": 15,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a15.jpg",
+    "name": "Munich's Finest Pilsner",
+    "ph": 5.2,
+    "tagline": "A classic German pilsner"
+  },
+  {
+    "abv": 9.5,
+    "brewers_tips": "Age for several months in oak barrels to add complexity and character.",
+    "description": "A strong and complex English barleywine with notes of oak, vanilla, and dried fruit.",
+    "first_brewed": 2020,
+    "food_pairing": [
+      "Chocolate desserts",
+      "Aged cheeses",
+      "Strong stews"
+    ],
+    "ibu": 50,
+    "id": 16,
+    "image_turl": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a16.jpg",
+    "name": "Cellar Dweller Barleywine",
+    "ph": 4.5,
+    "tagline": "A beer for special occasions"
+  },
+  {
+    "abv": 5.2,
+    "brewers_tips": "Use a blend of wheat and barley malt for a smooth and full-bodied beer.",
+    "description": "A light and refreshing American wheat beer with a hint of citrus and spice.",
+    "first_brewed": 2023,
+    "food_pairing": [
+      "Salads",
+      "Soft cheeses",
+      "Spicy food"
+    ],
+    "ibu": 15,
+    "id": 17,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a17.jpg",
+    "name": "Summer Citrus Wheat",
+    "ph": 4.0,
+    "tagline": "A taste of sunshine in a glass"
+  },
+  {
+    "abv": 6.0,
+    "brewers_tips": "Mash at a higher temperature to accentuate the malt character.",
+    "description": "A rich and toasty English brown ale with notes of caramel, toffee, and nuts.",
+    "first_brewed": 2024,
+    "food_pairing": [
+      "Grilled meats",
+      "Aged cheeses",
+      "Stews"
+    ],
+    "ibu": 28,
+    "id": 18,
+    "image_url": "https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/imgs/a18.jpg",
+    "name": "Nutty Brown Ale",
+    "ph": 5.1,
+    "tagline": "A comforting classic"
   }
-  ]
+]

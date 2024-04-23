@@ -21,7 +21,7 @@ class NetworkModule {
     fun provideRetrofit(client: OkHttpClient): Retrofit {
         return Builder()
             .client(client)
-            .baseUrl("https://api.punkapi.com/v2/")
+            .baseUrl("https://raw.githubusercontent.com/fabianbaezdev/BrewdogProject/master/json/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

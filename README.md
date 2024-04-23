@@ -2,11 +2,13 @@
 
 ### **Purpose**
 To show a demo Android App using Kotlin features, a small MVI architecture and latest Android 
-libraries from Jetpack in 2023.
+libraries from Jetpack in 2024.
 
 ### **Description**
-Application connects to [PUNK API V2](https://punkapi.com/) to download a catalogue of beers based on 
-Brewdog's DIY Dog (Thanks to [@sammdec](https://github.com/sammdec)).
+The app displays a list of dummy beers from a JSON hosted on this github server.
+
+It originally connected to an API to download a beer catalog based on
+Brewdog's DIY Dog (hence the name of the project), but unfortunately the API shut down.
 
 Data is always saved to the device (using data persistence with Room) and is consumed from there when 
 it exists.

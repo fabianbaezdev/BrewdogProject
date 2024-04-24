@@ -4,11 +4,10 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.CardDefaults
@@ -25,6 +24,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -52,7 +52,7 @@ fun ListScreen(
             containerColor = MaterialTheme.colorScheme.primaryContainer,
             titleContentColor = MaterialTheme.colorScheme.primary,
         ), title = {
-            Text("Brewdog Beers")
+            Text("Beers")
         })
     }) { innerPadding ->
         Column(
@@ -115,50 +115,66 @@ fun CardBeer(
     }
 
     ) {
-        Row(modifier = Modifier.fillMaxWidth()) {
-            AsyncImage(
-                model = beer.image,
-                contentDescription = "Beer image",
-                modifier = Modifier
-                    .size(100.dp)
-                    .background(Color.White)
-                    .padding(6.dp)
-            )
-            Column(modifier = Modifier.fillMaxSize()) {
-                Text(
-                    text = beer.name,
+        Column(modifier = Modifier.fillMaxWidth()) {
+            Box() {
+                AsyncImage(
+                    model = beer.image,
+                    contentScale = ContentScale.Crop,
+                    contentDescription = "Beer image",
                     modifier = Modifier
-                        .padding(6.dp)
-                        .testTag("BeerNameText"),
-                    textAlign = TextAlign.Left,
-                    fontWeight = FontWeight.Bold,
-                    maxLines = 1
+                        .fillMaxWidth()
+                        .aspectRatio(16f / 9f)
+                        .background(Color.White)
                 )
-                Row {
+
+                Column(modifier = Modifier.fillMaxSize()) {
                     Text(
-                        text = "ABV: ${beer.abv}",
+                        text = beer.name,
                         modifier = Modifier
-                            .padding(6.dp, 0.dp)
-                            .testTag("ABVText"),
+                            .padding(0.dp, 16.dp)
+                            .background(Color.White)
+                            .padding(6.dp)
+                            .testTag("BeerNameText"),
                         textAlign = TextAlign.Left,
-                        fontSize = 12.sp
+                        fontWeight = FontWeight.Bold,
+                        maxLines = 1
                     )
-                    Text(
-                        text = "IBU: ${beer.ibu}",
+                    Column(
                         modifier = Modifier
-                            .padding(6.dp, 0.dp)
-                            .testTag("IBUText"),
-                        textAlign = TextAlign.Left,
-                        fontSize = 12.sp
-                    )
+                            .padding(top = 26.dp)
+                            .background(Color.White)
+                            .padding(4.dp)
+                    ) {
+                        Text(
+                            text = "ABV: ${beer.abv}",
+                            modifier = Modifier
+                                .testTag("ABVText"),
+                            textAlign = TextAlign.Left,
+                            fontWeight = FontWeight.Medium,
+                            fontSize = 12.sp
+                        )
+                        Text(
+                            text = "IBU: ${beer.ibu}",
+                            modifier = Modifier
+                                .testTag("IBUText"),
+                            textAlign = TextAlign.Left,
+                            fontWeight = FontWeight.Medium,
+                            fontSize = 12.sp
+                        )
+                    }
                 }
+
+            }
+
+            Column(modifier = Modifier.fillMaxSize()) {
+
                 Text(
                     text = beer.tagLine,
                     modifier = Modifier
-                        .padding(6.dp, 2.dp)
+                        .padding(12.dp, 4.dp)
                         .testTag("tagLineText"),
                     textAlign = TextAlign.Left,
-                    fontSize = 12.sp
+                    fontSize = 14.sp
                 )
             }
 

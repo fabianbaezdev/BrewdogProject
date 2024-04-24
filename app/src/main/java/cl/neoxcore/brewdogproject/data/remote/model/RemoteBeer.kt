@@ -1,25 +1,15 @@
 package cl.neoxcore.brewdogproject.data.remote.model
 
 data class RemoteBeer(
-    val abv: Double,
-    val attenuation_level: Double,
-    val boil_volume: RemoteBoilVolume,
-    val brewers_tips: String,
-    val contributed_by: String,
-    val description: String,
-    val ebc: Double,
-    val first_brewed: String,
-    val food_pairing: List<String>,
-    val ibu: Double,
-    val id: Int,
-    val image_url: String,
-    val ingredients: RemoteIngredients,
-    val method: RemoteMethod,
-    val name: String,
-    val ph: Double,
-    val srm: Double,
-    val tagline: String,
-    val target_fg: Double,
-    val target_og: Double,
-    val volume: RemoteVolume
+    var abv: Double?,
+    var brewers_tips: String?,
+    var description: String?,
+    var first_brewed: String?,
+    var food_pairing: List<String>?,
+    var ibu: Double?,
+    var id: Int,
+    var image_url: String?,
+    var name: String?,
+    var ph: Double?,
+    var tagline: String?
 )

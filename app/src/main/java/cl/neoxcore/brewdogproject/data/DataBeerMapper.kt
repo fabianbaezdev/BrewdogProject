@@ -10,11 +10,11 @@ class DataBeerMapper @Inject constructor() {
     private fun RemoteBeer.remoteToDomain() =
         Beer(
             id = id,
-            name = name,
-            image = image_url,
+            name = name.orEmpty(),
+            image = image_url.orEmpty(),
             abv = abv.toString(),
             ibu = ibu.toString(),
-            tagLine = tagline
+            tagLine = tagline.orEmpty()
         )
 
     fun List<RemoteBeer>.remoteToDomain() = this.map { it.remoteToDomain() }
@@ -34,11 +34,11 @@ class DataBeerMapper @Inject constructor() {
     private fun RemoteBeer.toLocal() =
         LocalBeer(
             id = id,
-            name = name,
-            image = image_url,
+            name = name.orEmpty(),
+            image = image_url.orEmpty(),
             abv = abv.toString(),
             ibu = ibu.toString(),
-            tagLine = tagline
+            tagLine = tagline.orEmpty()
         )
 
     fun List<RemoteBeer>.toLocal() = this.map { it.toLocal() }
